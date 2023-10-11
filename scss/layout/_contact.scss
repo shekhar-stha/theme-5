@@ -1,0 +1,71 @@
+// Contact Page
+.contact {
+    // Flex
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 0rem;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        // Information Side
+        .info-section {
+            width: 30%;
+            background-color: $dark;
+            padding: 2rem 1.5rem;
+
+            @media (max-width: 1400px) {
+                width: 45%;
+            }
+
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+
+            h4 {
+                color: $white;
+                font-weight: 600;
+                font-size: 35px;
+                padding-bottom: 2rem;
+
+            }
+
+            .unit {
+                color: $white;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                padding-bottom: 2rem;
+                i {
+                    color: $secondary;
+                }
+
+                a {
+                    color: $white;
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+        // Map Side
+        .map-section {
+            width: 70%;
+
+            @media (max-width: 1400px) {
+                width: 55%;
+            }
+
+            @media (max-width: 992px) {
+                width: 100%;
+
+                iframe {
+                    min-height: 20rem;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Color Set */
+:root {
+  --primary: rgb(70, 156, 43);
+  --secondary: rgb(240, 145, 51);
+  --warning: rgb(9, 97, 68);
+  --success: rgb(236, 225, 136);
+  --danger: rgb(255, 77, 0);
+  --dark: rgb(33, 37, 41);
+  --info: rgb(128, 128, 128);
+  --light: rgb(251, 251, 251);
+  --black: rgb(48, 44, 44);
+  --white: rgb(252, 254, 247);
+  --creamWhite: rgb(247, 242, 237);
+  --body: #FCF9F4;
+
+  /* Headline */
+  --headline-font: 'Poppins', sans-serif;
+  --headline-font-weight: 600;
+  --headline-font-size: 2.4rem;
+
+  /* Primary Texts */
+  --primary-font: 'Poppins', sans-serif;
+  --primary-font-weight: 400;
+
+  /* Hyperlink Color */
+  --ahref-color: var(--dark);
+  --ahref-hover-color: var(--primary);
+
+  /* Used for text */
+  --bs-primary-rgb: 70, 156, 43;
+  --bs-secondary-rgb: 240, 145, 51;
+  --bs-success-rgb: 165, 119, 21;
+  --bs-info-rgb: 128, 128, 128;
+  --bs-warning-rgb: 9, 97, 68;
+  --bs-danger-rgb: 255, 77, 0;
+  --bs-light-rgb: 251, 251, 251;
+  --bs-dark-rgb: 33, 37, 41;
+  /* Finish */
+
+  /* Navigation */
+  --navigation-link-background: none;
+  --navigation-link-color: var(--white);
+  --navigation-link-border-color: var(--primary);
+  --navigation-link-text-decoration: none;
+  --navigation-link-hover-color: var(--primary);
+  --navigation-link-font-size: 18px;
+  --navigation-link-margin-x: 0.5rem;
+  --navbar-logo-size: 20rem;
+  --upper-nav-font-size: 1.1rem;
+  --upper-nav-icon-color: var(--white);
+  --upper-nav-bg-color: var(--primary);
+
+  /* Hero */
+  --hero-overlay: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8240546218) 33%, rgba(0, 0, 0, 0.7484243697) 65%, rgba(0, 0, 0, 0.7120098039) 84%);
+  --hero-heading-color: var(--white);
+  --hero-font-size: 50px;
+  --hero-font-weight: 500;
+  --hero-highlighted-text: var(--primary);
+  --hero-highlighted-text-font-weight: 600;
+  --hero-paragraph-font-size: 19px;
+  --hero-paragraph-font-weight: 400;
+  --hero-paragraph-color: var(--white);
+  --hero-primary-button: var(--primary);
+  --hero-primary-button-text: var(--white);
+  --hero-secondary-button: transparent;
+  --hero-secondary-button-text: var(--primary);
+  --hero-btn-border-radius: 1rem;
+  
+  /*Services  */
+  --services-background-after-effects-color: rgb(216, 238, 199);
+  --light-primary-bg: rgb(242, 253, 235);
+
+  /* Light Section */
+  --light-section-background: var(--body);
+  --light-section-text: var(--dark);
+  --light-section-header-color: var(--dark);
+  --light-section-primary-button: var(--primary);
+  --light-section-primary-button-text: var(--white);
+  --light-section-secondary-button: transparent;
+  --light-section-secondary-button-text: var(--primary);
+  --light-section-ahref-color: var(--dark);
+  --light-section-ahref-hover-color: var(--primary);
+  --light-section-button-border-radius: 1rem;
+
+
+  /* Dark Section */
+  --dark-section-background: var(--dark);
+  --dark-section-text: var(--white);
+  --dark-section-header-color: rgb(80, 182, 49);
+  --dark-section-primary-button: var(--primary);
+  --dark-section-primary-button-text: var(--white);
+  --dark-section-secondary-button: transparent;
+  --dark-section-secondary-button-text: var(--primary);
+  --dark-section-ahref-color: var(--white);
+  --dark-section-ahref-hover-color: var(--primary);
+  --dark-section-button-border-radius: 50rem;
+
+  /* Footer */
+  --footer-section-background: var(--dark);
+  --footer-section-text-color: var(--white);
+  --footer-section-ahref-color: var(--white);
+  --footer-section-ahref-hover-color: var(--primary);
+  --footer-section-icon-color: var(--primary);
+
+  /* Primary Overlay Section */
+  --primary-overlay-bg-color: rgba(70, 156, 43, 0.3);
+  --primary-overlay-header-color: var(--white);
+  --primary-overlay-primary-button: var(--primary);
+  --primary-overlay-primary-button-text: var(--white);
+  --primary-overlay-secondary-button: transparent;
+  --primary-overlay-secondary-button-text: var(--primary);
+  --primary-overlay-ahref-color: var(--white);
+  --primary-overlay-ahref-hover-color: var(--primary);
+  --primary-overlay-button-border-radius: 50rem;
+}
+
+/* Apply */
+/* Light Section */
+.light-section {
+  background-color: var(--light-section-background);
+}
+
+.light-section p {
+  color: var(--light-section-text);
+}
+
+.light-section .header {
+  color: var(--light-section-header-color);
+}
+
+.light-section .sub-header {
+  color: var(--light-section-sub-header-color);
+}
+
+.light-section .sub-header::after {
+  background-color: var(--light-section-sub-header-border-color);
+}
+
+.light-section .btn-primary {
+  border: 2px solid var(--light-section-primary-button) !important;
+  background-color: var(--light-section-primary-button) !important;
+  color: var(--light-section-primary-button-text) !important;
+}
+
+.light-section .btn-primary:hover {
+  border: 2px solid var(--light-section-primary-button) !important;
+  background-color: transparent !important;
+  color: var(--light-section-primary-button) !important;
+}
+
+.light-section .btn-secondary {
+  border: 2px solid var(--light-section-secondary-button-text) !important;
+  background-color: var(--light-section-seconadary-button) !important;
+  color: var(--light-section-secondary-button-text) !important;
+}
+
+.light-section .btn-secondary:hover {
+  border: 2px solid var(--light-section-secondary-button-text) !important;
+  background-color: var(--light-section-secondary-button-text) !important;
+  color: var(--white) !important;
+}
+
+.light-section .btn{
+    border-radius: var(--light-section-button-border-radius) !important;
+}
+
+.light-section .link {
+  color: var(--light-section-ahref-color);
+}
+
+.light-section .link:hover {
+  color: var(--light-section-ahref-hover-color);
+}
+
+/* Dark Section */
+.dark-section {
+  background-color: var(--dark-section-background);
+}
+
+.dark-section p {
+  color: var(--dark-section-text);
+}
+
+.dark-section .header {
+  color: var(--dark-section-header-color);
+}
+
+.dark-section .sub-header {
+  color: var(--dark-section-sub-header-color);
+}
+
+.dark-section .sub-header::after {
+  background-color: var(--dark-section-sub-header-border-color);
+}
+
+.dark-section .btn-primary {
+  border: 2px solid var(--dark-section-primary-button) !important;
+  background-color: var(--dark-section-primary-button) !important;
+  color: var(--dark-section-primary-button-text) !important;
+}
+
+.dark-section .btn-primary:hover {
+  border: 2px solid var(--dark-section-primary-button) !important;
+  background-color: transparent !important;
+  color: var(--dark-section-primary-button) !important;
+}
+
+.dark-section .btn-secondary {
+  border: 2px solid var(--dark-section-secondary-button-text) !important;
+  background-color: var(--dark-section-seconadary-button) !important;
+  color: var(--dark-section-secondary-button-text) !important;
+}
+
+.dark-section .btn-secondary:hover {
+  border: 2px solid var(--dark-section-secondary-button-text) !important;
+  background-color: var(--dark-section-secondary-button-text) !important;
+  color: var(--white) !important;
+}
+
+.dark-section .link {
+  color: var(--dark-section-ahref-color);
+}
+
+.dark-section .link:hover {
+  color: var(--dark-section-ahref-hover-color);
+}
+
+
+/* Primary Overlay */
+.primary-overlay::after {
+  position: absolute;
+  content: "";
+  background-color: var(--primary-overlay-bg-color);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.primary-overlay .sub-header {
+  color: var(--primary-overlay-sub-header-color);
+}
+
+.primary-overlay .header {
+  color: var(--primary-overlay-header-color);
+}
+
+.primary-overlay .sub-header::after,
+.primary-overlay .sub-header-center::after {
+  background-color: var(--primary-overlay-sub-header-border-color);
+}
+
+.primary-overlay .btn-primary {
+  border: 2px solid var(--primary-overlay-primary-button) !important;
+  background-color: var(--primary-overlay-primary-button) !important;
+  color: var(--primary-overlay-primary-button-text) !important;
+}
+
+.primary-overlay .btn-primary:hover {
+  border: 2px solid var(--primary-overlay-primary-button) !important;
+  background-color: transparent !important;
+  color: var(--primary-overlay-primary-button) !important;
+}
+
+.primary-overlay .btn-secondary {
+  border: 2px solid var(--primary-overlay-secondary-button-text) !important;
+  background-color: var(--primary-overlay-secondary-button) !important;
+  color: var(--primary-overlay-secondary-button-text) !important;
+}
+
+.primary-overlay .btn-secondary:hover {
+  border: 2px solid var(--primary-overlay-secondary-button-text) !important;
+  background-color: var(--primary-overlay-secondary-button-text) !important;
+  color: var(--white) !important;
+}
+
+/* Hyperlinks */
+.link {
+  color: var(--ahref-color);
+}
+
+.link:hover {
+  color: var(--ahref-hover-color);
+}
