@@ -16,12 +16,12 @@
   --body: #FCF9F4;
 
   /* Headline */
-  --headline-font: 'montserrat', sans-serif;
+  --headline-font: 'poppins', sans-serif;
   --headline-font-weight: 600;
   --headline-font-size: 2.4rem;
 
   /* Primary Texts */
-  --primary-font: 'montserrat', sans-serif;
+  --primary-font: 'poppins', sans-serif;
   --primary-font-weight: 400;
 
   /* Hyperlink Color */
