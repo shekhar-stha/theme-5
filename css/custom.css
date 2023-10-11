@@ -56,9 +56,9 @@
   --hero-overlay: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8240546218) 33%, rgba(0, 0, 0, 0.7484243697) 65%, rgba(0, 0, 0, 0.7120098039) 84%);
   --hero-heading-color: var(--white);
   --hero-font-size: 50px;
-  --hero-font-weight: 500;
+  --hero-font-weight: 600;
   --hero-highlighted-text: var(--primary);
-  --hero-highlighted-text-font-weight: 600;
+  --hero-highlighted-text-font-weight: 700;
   --hero-paragraph-font-size: 19px;
   --hero-paragraph-font-weight: 400;
   --hero-paragraph-color: var(--white);
