@@ -2,19 +2,6 @@
 AOS.init();
 
 
-$('.commercial-residential-row').slick({
-  dots: true,
-  infinite: true,
-  loop: true,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
-  nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>'
-});
-
-
-
 $('.testimonial-slider').slick({
   dots: true,
   infinite: true,
